@@ -1,5 +1,5 @@
 #include <iostream>
-
+int sum();
 int main(){
     int firstnum;
     int secnum;
@@ -11,3 +11,10 @@ cin >> secnum>>endl;
 cout <<"gorcoxutyan nshan"<<endl;
 cin >> gorc;
 }
+
+int sum (int first, int sec){
+int res;
+res=first+sec;
+return res;
+}
+
