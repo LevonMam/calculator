@@ -1,5 +1,5 @@
 #include <iostream>
-
+int sum();
 int main(){
 	int firstnum;
 	int secnum;
@@ -24,3 +24,10 @@ int minus(int firstnum, int secnum)
 	return result;
 
 }
+
+int sum (int first, int sec){
+int res;
+res=first+sec;
+return res;
+}
+
