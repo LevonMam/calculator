@@ -1,5 +1,5 @@
 #include <iostream>
-
+int sum();
 int main(){
 	int firstnum;
 	int secnum;
@@ -30,3 +30,10 @@ int hamematum(int firstnum, int secnum)
 
 
 }
+
+int sum (int first, int sec){
+int res;
+res=first+sec;
+return res;
+}
+
