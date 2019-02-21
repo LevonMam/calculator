@@ -14,6 +14,7 @@ int main(){
 
 
 
+
 int hamematum(int firstnum, int secnum)
 {
 
@@ -27,6 +28,16 @@ int hamematum(int firstnum, int secnum)
 		return secnum;
 	}
 
+
+
+
+
+int minus(int firstnum, int secnum)
+{   
+	int result;
+
+	result = firstnum - secnum;
+	return result;
 
 
 }
