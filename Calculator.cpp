@@ -43,8 +43,20 @@ int minus(int firstnum, int secnum)
 }
 
 int sum (int first, int sec){
-int res;
-res=first+sec;
-return res;
+	int res;
+	res=first+sec;
+	return res;
 }
 
+
+int divide (int firstnum, int secnum ){
+
+	
+	if(secnum == 0)
+		{
+			return 0;	
+		}
+		else
+			return firstnum / secnum;
+		
+}
