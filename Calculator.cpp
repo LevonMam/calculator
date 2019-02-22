@@ -22,7 +22,7 @@ void calc(){
 
 	int num1, num2;
 	char simvol;
-	while(simvol != num1 || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/'|| simvol == '$'|| simvol == '^')
+	while(simvol != num1 || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/'|| simvol == '$'|| simvol == '^'|| simvol == '@')
 
 	{
 		cout<<"Enter num1: ";
@@ -81,6 +81,12 @@ void calc(){
                         return;
                 }
 
+		 if(simvol == '@')
+                {
+
+                        cout<< cubest(num1,num2)<<endl;
+                        return;
+                }
 
 
 
@@ -173,5 +179,11 @@ int mnacord(int num1, int num2){
 	int result;
 	result=num1%num2;
 	return result;
+}
+
+double cubest (int num1,int num2){
+        cin.ignore(num2);
+        double result = pow(num1, 1.0/3.0);
+        return result;
 }
 
