@@ -7,7 +7,9 @@ int minuss(int num1, int num2);
 int mnacord(int num1, int num2);
 int baj(int num1, int num2);
 int hamematum(int num1, int num2);
+int procent(int num1, int num2);
 void calc();
+
 int main()
 {
 
@@ -20,7 +22,7 @@ void calc(){
 
 	int num1, num2;
 	char simvol;
-	while(simvol != num1 || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/')
+	while(simvol != num1 || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/'|| simvol == '$'|| simvol == '^')
 
 	{
 		cout<<"Enter num1: ";
@@ -62,7 +64,7 @@ void calc(){
 
 			cout<< mnacord(num1,num2)<<endl;
 			return;		
-}
+		}
 
 		if(simvol == '^')
 		{
@@ -72,6 +74,12 @@ void calc(){
 		}
 
 
+		if(simvol == '$')
+                {
+
+                        cout<< procent(num1,num2)<<endl;
+                        return;
+                }
 
 
 
@@ -86,12 +94,12 @@ int hamematum(int num1, int num2)
 
 	if(num1>num2)
 	{
-		cout<< num1<<endl;
+	return num1;
 
 	}
 	else
 	{
-		cout<<num2<<endl;
+		return num2;
 	}
 }
 
@@ -147,6 +155,16 @@ int degree(int num1, int num2){
 		return 1;
 	}
 }
+
+int procent(int num1,int num2)
+
+{
+
+	int result;
+	result = num1*num2/100;
+	return result;
+}
+
 
 
 
