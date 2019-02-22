@@ -57,3 +57,35 @@ do{
     calc();
 
 }
+int hamematum(int firstnum, int secnum)
+{
+
+	if(firstnum>secnum)
+	{
+		return firstnum;
+
+	}
+	else
+	{
+		return secnum;
+	}
+
+
+
+
+
+int minus(int firstnum, int secnum)
+{   
+	int result;
+
+	result = firstnum - secnum;
+	return result;
+
+
+}
+
+int sum (int first, int sec){
+int res;
+res=first+sec;
+return res;
+}
