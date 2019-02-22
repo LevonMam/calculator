@@ -160,7 +160,15 @@ int mnacord(int num1, int num2){
 
 double cubest (int num1,int num2){
         cin.ignore(num2);
-        double result = pow(num1, 1.0/3.0);
-        return result;
-}
+        if (num1<0){
+        	double result =- pow(-num1, 1.0/3.0);
+	        return result;
+        } else if(num1>0) {
+        	double result = pow(num1, 1.0/3.0);
+      	  	return result;
+        } else {
+  	      return 0;
+        }
+
+ }
 
