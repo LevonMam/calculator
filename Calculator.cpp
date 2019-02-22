@@ -12,7 +12,7 @@ return 0;
 
 void calc(){
 
-  int num1,num2;
+  int num1, num2;
   char simvol;
 do{
   cout<<"Enter num1 ";
@@ -57,35 +57,35 @@ do{
     calc();
 
 }
-int hamematum(int firstnum, int secnum)
+int hamematum(int num1, int num2)
 {
 
-	if(firstnum>secnum)
+	if(num1>num2)
 	{
-		return firstnum;
+		return num1;
 
 	}
 	else
 	{
-		return secnum;
+		return num2;
 	}
 
 
 
 
 
-int minus(int firstnum, int secnum)
+int minus(int num1, int num2)
 {   
 	int result;
 
-	result = firstnum - secnum;
+	result = num1 - num2;
 	return result;
 
 
 }
 
-int sum (int first, int sec){
+int sum (int num1, int num2){
 int res;
-res=first+sec;
-return res;
+result=num1 + num2;
+return result;
 }
