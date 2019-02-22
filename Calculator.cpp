@@ -2,9 +2,10 @@
 using namespace std;
 int degree();
 void calc();
+int procent();
 int main()
 {
-
+        procent();
 	calc();
 
 	return 0;
@@ -122,3 +123,20 @@ int hamematum(int num1, int num2)
 			return 1;
 		}
 	}
+
+ int procent()
+
+ {
+     int tiv1;
+     int tokos;
+    float tiv2;
+    cout<<endl<< tiv1 ;
+     cin>>tiv1;
+     cout <<endl<<tokos;
+     cin>>tokos;
+     tiv2 =tiv1*tokos/100;
+     cout<<endl<<tiv2;
+     
+     return 0;
+ }
+
