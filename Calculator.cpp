@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int degree();
 void calc();
@@ -52,6 +53,17 @@ void calc(){
 		cout<<baj(num1,num2)<<endl;
 		return;
 	}
+
+	if(simvol == '%')
+	{
+	
+		cout<< mnacord(num1,num2)<<endl;
+	}
+
+
+
+
+
 
 }else{
 	cout<<"Enter normal num & simvol";
@@ -112,6 +124,7 @@ int hamematum(int num1, int num2)
 
 
 
+<<<<<<< HEAD
 	int degree(int num1, int num2){
 		int result.;
 		if (num2>0){
@@ -139,4 +152,27 @@ int hamematum(int num1, int num2)
      
      return 0;
  }
+=======
+
+int degree(int num1, int num2){
+int result.;
+    if (num2>0){
+    for (int i=0; i<num2; i++){
+    result*=num1;
+    }
+return result;
+}else{
+return 1;
+}
+}
+
+
+
+
+int mnacord(int num1, int num2){
+int result;
+result=num1%num2;
+return result;
+}
+>>>>>>> 578c7c41c9c50cbcb278e06047ae17f4d97de875
 
