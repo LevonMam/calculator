@@ -27,7 +27,7 @@ void calc(){
 
 
 
-	if(simvol == 'sum')
+	if(simvol == '+')
 	{
 		cout<<sum(num1,num2)<<endl;
 		return;
@@ -85,7 +85,7 @@ int hamematum(int num1, int num2)
 	}
 
 	int sum (int num1, int num2){
-		int res;
+		int result;
 		result=num1 + num2;
 		return result;
 	}
@@ -111,14 +111,14 @@ int hamematum(int num1, int num2)
 
 
 
-int degree(int num1, int num2){
-int result.;
-    if (num2>0){
-    for (int i=0; i<num2; i++){
-    result*=num1;
-    }
-return result;
-}else{
-return 1;
-}
-}
+	int degree(int num1, int num2){
+		int result.;
+		if (num2>0){
+			for (int i=0; i<num2; i++){
+				result*=num1;
+			}
+			return result;
+		}else{
+			return 1;
+		}
+	}
