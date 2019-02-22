@@ -1,7 +1,12 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-int degree();
+int degree(int num1, int num2);
+int sum(int num1, int num2);
+int minuss(int num1, int num2);
+int mnacord(int num1, int num2);
+int baj(int num1, int num2);
+int hamematum(int num1, int num2);
 void calc();
 int main()
 {
@@ -26,7 +31,7 @@ void calc(){
 		cin>> simvol;
 	}while(!num1 || !num2 || simvol != '<' || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/');
 
-
+	{
 
 	if(simvol == '+')
 	{
@@ -42,7 +47,7 @@ void calc(){
 	if(simvol == '-')
 	{
 
-		cout<<minus(num1,num2)<<endl;
+		cout<<minuss(num1,num2)<<endl;
 		return;
 	}
 
@@ -55,8 +60,14 @@ void calc(){
 
 	if(simvol == '%')
 	{
-	
+
 		cout<< mnacord(num1,num2)<<endl;
+	}
+
+	if(simvol == '^')
+	{
+
+		cout<< degree(num1,num2)<<endl;
 	}
 
 
@@ -64,30 +75,28 @@ void calc(){
 
 
 
-}else{
-	cout<<"Enter normal num & simvol";
-	calc();
 
+}
 }
 int hamematum(int num1, int num2)
 {
 
 	if(num1>num2)
 	{
-		return num1;
+		cout<< num1<<endl;
 
 	}
 	else
 	{
-		return num2;
+		cout<<num2<<endl;
 	}
+}
 
 
 
 
-
-	int minus(int num1, int num2)
-	{   
+	int minuss(int num1, int num2){
+	   
 		int result;
 
 		result = num1 - num2;
@@ -99,7 +108,7 @@ int hamematum(int num1, int num2)
 	int sum (int num1, int num2){
 		int result;
 		result=num1 + num2;
-		return result;
+		cout<< result<<endl;
 	}
 
 	int baj (int num1, int num2){
@@ -107,7 +116,7 @@ int hamematum(int num1, int num2)
 
 		if(num2 == 0)
 		{
-			exit 0;
+		return 0;
 		}
 		else
 			result=num1/num2;
@@ -124,24 +133,24 @@ int hamematum(int num1, int num2)
 
 
 
-int degree(int num1, int num2){
-int result.;
-    if (num2>0){
-    for (int i=0; i<num2; i++){
-    result*=num1;
-    }
-return result;
-}else{
-return 1;
-}
-}
+	int degree(int num1, int num2){
+		int result;
+		if (num2>0){
+			for (int i=0; i<num2; i++){
+				result*=num1;
+			}
+			return result;
+		}else{
+			return 1;
+		}
+	}
 
 
 
 
-int mnacord(int num1, int num2){
-int result;
-result=num1%num2;
-return result;
-}
+	int mnacord(int num1, int num2){
+		int result;
+		result=num1%num2;
+		return result;
+	}
 
