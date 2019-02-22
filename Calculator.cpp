@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+int degree();
 void calc();
 int main()
 {
@@ -88,4 +88,17 @@ int sum (int first, int sec){
 int res;
 res=first+sec;
 return res;
+}
+
+
+int degree(int num1, int num2){
+int res;
+    if (num2>0){
+    for (int i=0; i<num2; i++){
+    res*=num1;
+    }
+return res;
+}else{
+return 1;
+}
 }
