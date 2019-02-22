@@ -122,3 +122,17 @@ return result;
 return 1;
 }
 }
+
+
+
+
+int mnacord(int num1, int num2){
+cout<<"Write num1"<<endl;
+cin>>num1;
+cout<< "Write num2"<<endl;
+cin>>num2;
+int result=num1%num2;
+return result;
+}
+
+
