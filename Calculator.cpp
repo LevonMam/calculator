@@ -49,14 +49,15 @@ int sum (int first, int sec){
 }
 
 
-int divide (int firstnum, int secnum ){
-
+int baj (int num1, int num2){
+int result;
 	
-	if(secnum == 0)
+	if(num2 == 0)
 		{
 			return 0;	
 		}
 		else
-			return firstnum / secnum;
+			result=num1/num2;
+			return result;
 		
 }
