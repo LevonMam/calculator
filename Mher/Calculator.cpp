@@ -5,7 +5,7 @@ void calc();
 int main()
 {
 
-
+calc();
 
 return 0;
 }
@@ -14,7 +14,7 @@ void calc(){
 
   int num1,num2;
   char simvol;
-
+do{
   cout<<"Enter num1 ";
   cin>>num1;
   cout<<"Enter num 2";
@@ -23,9 +23,10 @@ void calc(){
   cout<<"Enter simvol ";
 
   cin>> simvol;
+}while(!num1 || !num2 || simvol != '<' || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/');
 
-  if(num1 && num2 && simvol )
-{
+ 
+
     if(simvol == 'sum')
     {
 	cout<<sum(num1,num2)<<endl;
