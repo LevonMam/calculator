@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+
 int degree(int num1, int num2);
 int sum(int num1, int num2);
 int minuss(int num1, int num2);
@@ -80,18 +81,10 @@ void calc(){
                         cout<< procent(num1,num2)<<endl;
                         return;
                 }
-
-
-
-
-
-
-
 	}
 }
 int hamematum(int num1, int num2)
 {
-
 	if(num1>num2)
 	{
 	return num1;
@@ -103,28 +96,23 @@ int hamematum(int num1, int num2)
 	}
 }
 
-
-
-
-int minuss(int num1, int num2){
-
+int minuss(int num1, int num2)
+{
 	int result;
-
 	result = num1 - num2;
 	return result;
-
-
 }
 
-int sum (int num1, int num2){
+int sum (int num1, int num2)
+{
 	int result;
 	result=num1 + num2;
 	return result;
 }
 
-int baj (int num1, int num2){
+int baj (int num1, int num2)
+{
 	int result;
-
 	if(num2 == 0)
 	{
 		return 0;
@@ -132,20 +120,10 @@ int baj (int num1, int num2){
 	else
 		result=num1/num2;
 	return result;
-
 }
 
-
-
-
-
-
-
-
-
-
 int degree(int num1, int num2){
-	int result;
+	int result=1;
 	if (num2>0){
 		for (int i=0; i<num2; i++){
 			result*=num1;
@@ -164,10 +142,6 @@ int procent(int num1,int num2)
 	result = num1*num2/100;
 	return result;
 }
-
-
-
-
 
 int mnacord(int num1, int num2){
 	int result;
