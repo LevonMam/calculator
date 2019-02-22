@@ -52,6 +52,17 @@ void calc(){
 		return;
 	}
 
+	if(simvol == '%')
+	{
+	
+		cout<< mnacord(num1,num2)<<endl;
+	}
+
+
+
+
+
+
 }else{
 	cout<<"Enter normal num & simvol";
 	calc();
