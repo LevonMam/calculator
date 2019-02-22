@@ -108,20 +108,16 @@ int hamematum(int num1, int num2)
 
 
 
-int sum (int first, int sec){
-int res;
-res=first+sec;
-return res;
-}
+
 
 
 int degree(int num1, int num2){
-int res;
+int result.;
     if (num2>0){
     for (int i=0; i<num2; i++){
-    res*=num1;
+    result*=num1;
     }
-return res;
+return result;
 }else{
 return 1;
 }
