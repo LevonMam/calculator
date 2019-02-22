@@ -95,7 +95,7 @@ int hamematum(int num1, int num2)
 
 		if(num2 == 0)
 		{
-			return 0;
+			exit 0;
 		}
 		else
 			result=num1/num2;
