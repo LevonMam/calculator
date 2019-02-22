@@ -1,50 +1,124 @@
 #include <iostream>
-int sum();
-int main(){
-	int firstnum;
-	int secnum;
-	char gorc;
-	cout<<"enter number 1"<<endl;
-	cin >> firsnum>>endl;
-	cout<<"enter number 2"<<endl;
-	cin >> secnum>>endl;
-	cout <<"gorcoxutyan nshan"<<endl;
-	cin >> gorc;
-}
-
-
-
-
-int hamematum(int firstnum, int secnum)
+using namespace std;
+int degree();
+void calc();
+int main()
 {
 
-	if(firstnum>secnum)
+	calc();
+
+	return 0;
+}
+
+void calc(){
+
+	int num1, num2;
+	char simvol;
+	do{
+		cout<<"Enter num1 ";
+		cin>>num1;
+		cout<<"Enter num 2";
+		cin>>num2;
+
+		cout<<"Enter simvol ";
+
+		cin>> simvol;
+	}while(!num1 || !num2 || simvol != '<' || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/');
+
+
+
+	if(simvol == 'sum')
 	{
-		return firstnum;
+		cout<<sum(num1,num2)<<endl;
+		return;
+	}
+	if(simvol =='<' || simvol == '>')
+	{
+
+		cout<<hamematum(num1,num2)<<endl;
+		return;
+	}
+	if(simvol == '-')
+	{
+
+		cout<<minus(num1,num2)<<endl;
+		return;
+	}
+
+	if(simvol == '/')
+	{
+
+		cout<<baj(num1,num2)<<endl;
+		return;
+	}
+
+}else{
+	cout<<"Enter normal num & simvol";
+	calc();
+
+}
+int hamematum(int num1, int num2)
+{
+
+	if(num1>num2)
+	{
+		return num1;
 
 	}
 	else
 	{
-		return secnum;
+		return num2;
 	}
 
 
 
 
 
-int minus(int firstnum, int secnum)
-{   
-	int result;
+	int minus(int num1, int num2)
+	{   
+		int result;
 
-	result = firstnum - secnum;
-	return result;
+		result = num1 - num2;
+		return result;
 
 
+	}
+
+	int sum (int num1, int num2){
+		int res;
+		result=num1 + num2;
+		return result;
+	}
+
+	int baj (int num1, int num2){
+		int result;
+
+		if(num2 == 0)
+		{
+			return 0;
+		}
+		else
+			result=num1/num2;
+		return result;
+
+	}
+
+
+
+
+
+
+
+
+
+int degree(int num1, int num2){
+int result.;
+    if (num2>0){
+    for (int i=0; i<num2; i++){
+    result*=num1;
+    }
+return result;
+}else{
+return 1;
 }
-
-int sum (int first, int sec){
-int res;
-res=first+sec;
-return res;
 }
-
