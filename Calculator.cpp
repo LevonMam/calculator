@@ -20,63 +20,66 @@ void calc(){
 
 	int num1, num2;
 	char simvol;
-	do{
-		cout<<"Enter num1 ";
+	while(simvol != num1 || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/')
+
+	{
+		cout<<"Enter num1: ";
 		cin>>num1;
-		cout<<"Enter num 2";
+		cout<<"Enter num2: ";
 		cin>>num2;
 
-		cout<<"Enter simvol ";
+		cout<<"Enter simvol: ";
 
 		cin>> simvol;
-	}while(!num1 || !num2 || simvol != '<' || simvol == '>' || simvol == '+' || simvol == '-' || simvol == '*' || simvol == '/');
 
-	{
+		if(simvol == '+')
+		{
+			cout<<sum(num1,num2)<<endl;
+			return;
+		}
+		if(simvol =='<' || simvol == '>')
+		{
 
-	if(simvol == '+')
-	{
-		cout<<sum(num1,num2)<<endl;
-		return;
-	}
-	if(simvol =='<' || simvol == '>')
-	{
+			cout<<hamematum(num1,num2)<<endl;
+			return;
+		}
+		if(simvol == '-')
+		{
 
-		cout<<hamematum(num1,num2)<<endl;
-		return;
-	}
-	if(simvol == '-')
-	{
+			cout<<minuss(num1,num2)<<endl;
+			return;
+		}
 
-		cout<<minuss(num1,num2)<<endl;
-		return;
-	}
+		if(simvol == '/')
+		{
 
-	if(simvol == '/')
-	{
+			cout<<baj(num1,num2)<<endl;
+			return;
+		}
 
-		cout<<baj(num1,num2)<<endl;
-		return;
-	}
+		if(simvol == '%')
+		{
 
-	if(simvol == '%')
-	{
-
-		cout<< mnacord(num1,num2)<<endl;
-	}
-
-	if(simvol == '^')
-	{
-
-		cout<< degree(num1,num2)<<endl;
-	}
-
-
-
-
-
-
-
+			cout<< mnacord(num1,num2)<<endl;
+			return;		
 }
+
+		if(simvol == '^')
+		{
+
+			cout<< degree(num1,num2)<<endl;
+			return;
+		}
+
+
+
+
+
+
+
+
+
+	}
 }
 int hamematum(int num1, int num2)
 {
@@ -95,62 +98,62 @@ int hamematum(int num1, int num2)
 
 
 
-	int minuss(int num1, int num2){
-	   
-		int result;
+int minuss(int num1, int num2){
 
-		result = num1 - num2;
-		return result;
+	int result;
+
+	result = num1 - num2;
+	return result;
 
 
-	}
+}
 
-	int sum (int num1, int num2){
-		int result;
-		result=num1 + num2;
-		cout<< result<<endl;
-	}
+int sum (int num1, int num2){
+	int result;
+	result=num1 + num2;
+	return result;
+}
 
-	int baj (int num1, int num2){
-		int result;
+int baj (int num1, int num2){
+	int result;
 
-		if(num2 == 0)
-		{
+	if(num2 == 0)
+	{
 		return 0;
+	}
+	else
+		result=num1/num2;
+	return result;
+
+}
+
+
+
+
+
+
+
+
+
+
+int degree(int num1, int num2){
+	int result;
+	if (num2>0){
+		for (int i=0; i<num2; i++){
+			result*=num1;
 		}
-		else
-			result=num1/num2;
 		return result;
-
+	}else{
+		return 1;
 	}
+}
 
 
 
 
-
-
-
-
-
-
-	int degree(int num1, int num2){
-		int result;
-		if (num2>0){
-			for (int i=0; i<num2; i++){
-				result*=num1;
-			}
-			return result;
-		}else{
-			return 1;
-		}
-	}
-
-
-
-
-	int mnacord(int num1, int num2){
-		int result;
-		result=num1%num2;
-		return result;
-	}
+int mnacord(int num1, int num2){
+	int result;
+	result=num1%num2;
+	return result;
+}
 
