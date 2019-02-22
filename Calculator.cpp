@@ -27,7 +27,7 @@ void calc(){
 
 
 
-	if(simvol == 'sum')
+	if(simvol == '+')
 	{
 		cout<<sum(num1,num2)<<endl;
 		return;
@@ -51,6 +51,17 @@ void calc(){
 		cout<<baj(num1,num2)<<endl;
 		return;
 	}
+
+	if(simvol == '%')
+	{
+	
+		cout<< mnacord(num1,num2)<<endl;
+	}
+
+
+
+
+
 
 }else{
 	cout<<"Enter normal num & simvol";
@@ -85,7 +96,7 @@ int hamematum(int num1, int num2)
 	}
 
 	int sum (int num1, int num2){
-		int res;
+		int result;
 		result=num1 + num2;
 		return result;
 	}
@@ -95,13 +106,14 @@ int hamematum(int num1, int num2)
 
 		if(num2 == 0)
 		{
-			return 0;
+			exit 0;
 		}
 		else
 			result=num1/num2;
 		return result;
 
 	}
+
 
 
 
@@ -127,12 +139,10 @@ return 1;
 
 
 int mnacord(int num1, int num2){
-cout<<"Write num1"<<endl;
-cin>>num1;
-cout<< "Write num2"<<endl;
-cin>>num2;
-int result=num1%num2;
+int result;
+result=num1%num2;
 return result;
 }
+
 
 
