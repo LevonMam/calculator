@@ -45,7 +45,11 @@ int main()
 		case '<':
 			cout<<"RESULT:  "<<hamematum(num1,num2)<<endl;
 			break;
-
+		
+		case '>':
+                        cout<<"RESULT:  "<<hamematum(num1,num2)<<endl;
+                        break;
+		
 		case '-':
 			cout<<"RESULT:  "<<minuss(num1,num2)<<endl;
 			break;
