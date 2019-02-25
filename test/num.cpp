@@ -7,3 +7,10 @@ int main () {
 }
 
 
+
+int main(){
+cout << Hello;
+cin>>Vahan;
+
+}
+
