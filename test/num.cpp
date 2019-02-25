@@ -2,7 +2,7 @@
 using namespace std;
 aren
 
-int main () {
+in () {
 
 }
 
