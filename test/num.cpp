@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-version Hovo Levon
-=======
+
+version Hovo Owner
 #include <iostream>
 using namespace std;
 
-<<<<<<< HEAD
 ksjdaksjd
-=======
 int main () {
 
 }
@@ -39,5 +36,4 @@ cout << Hello;
 cin>>Vahan;
 
 }
->>>>>>> 2868fd436affc6424a700de3e4517beed8634c44
 
